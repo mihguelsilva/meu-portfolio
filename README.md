@@ -29,6 +29,42 @@ Sistema de cadastro desenvolvido em PHP puro utilizando a arquitetura MVC. O sis
 - Templates HTML com Bootstrap
 - Boas práticas de segurança com `prepared statements`
 
+### 🔐 Sistema de Login Seguro com Painel Administrativo
+
+Este projeto implementa um sistema de login seguro utilizando **PHP puro** com a arquitetura **MVC**. Ele oferece um painel administrativo protegido, onde é possível gerenciar usuários e visualizar mensagens recebidas via formulário de contato.
+
+A autenticação é feita com **hash seguro de senha**, controle de **sessões**, e diversas **boas práticas de segurança** como tokens CSRF, validação de dados e proteção de rotas via middleware.
+
+---
+
+#### 🛠 Funcionalidades principais
+
+- 🔒 Login seguro com `password_hash`
+- 🧑‍💼 Gestão de usuários cadastrados
+- ✉️ Visualização e gerenciamento de mensagens de contato
+- 📊 Dashboard com estatísticas do sistema
+- 🛡 Proteção de rotas com middleware
+- ✅ Segurança aprimorada com tokens CSRF e validações rigorosas
+
+---
+
+#### 📂 Tecnologias utilizadas
+
+- PHP 8+
+- Composer (PSR-4 autoload)
+- HTML5, CSS3 e Bootstrap 5
+- Banco de dados MySQL/MariaDB
+- Sessões com `$_SESSION`
+- Estrutura MVC personalizada
+- PHPMailer para envio de emails
+
+---
+
+#### 🔗 Acesse o projeto
+
+- [📁 Código-fonte no GitHub](https://github.com/mihguelsilva/php-mvc-login-seguro)
+
+
 ## 📚 Em andamento
 
 Estou aprofundando meus conhecimentos em:
