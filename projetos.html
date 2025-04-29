@@ -1,46 +1,80 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Meus Projetos</title>
-    <link rel="stylesheet" href="css/style.css">
-</head>
-<body>
-    <header>
-        <h1>Meus Projetos</h1>
-        <nav>
+    <head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Meus Projetos</title>
+	<link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+	<header>
+            <h1>Meus Projetos</h1>
+            <nav>
+		<ul>
+                    <li><a href="index.html">Início</a></li>
+                    <li><a href="projetos.html">Projetos</a></li>
+		</ul>
+            </nav>
+	</header>
+
+	<section id="projeto1">
+            <h2>Cadastro MVC com PHP</h2>
+            <p>Este é um projeto de cadastro de usuários implementado utilizando PHP e a arquitetura MVC. O sistema permite criar, listar, editar e excluir cadastros de usuários, com comunicação com o banco de dados MariaDB via PDO.</p>
+            <a href="https://github.com/mihguelsilva/cadastro-mvc-php" target="_blank">Veja o código no GitHub</a>
+	</section>
+
+	<section id="projeto2">
+            <h2>PHP MVC - Sistema de Login Seguro com Painel Administrativo</h2>
+            <p>Este projeto implementa um sistema de login seguro utilizando PHP com a arquitetura MVC. Ele oferece um painel administrativo protegido, onde é possível gerenciar usuários e visualizar mensagens recebidas via formulário de contato. A autenticação é realizada de forma segura com hash de senhas e controle de sessões. Além disso, o sistema inclui proteção contra CSRF, validação de e-mail, e outros mecanismos de segurança avançados.</p>
+            <p>O painel inclui funcionalidades como:</p>
             <ul>
-                <li><a href="index.html">Início</a></li>
-                <li><a href="projetos.html">Projetos</a></li>
+		<li>Login seguro com hash de senha</li>
+		<li>Gestão de usuários cadastrados</li>
+		<li>Visualização e gerenciamento das mensagens recebidas via formulário de contato</li>
+		<li>Dashboard com estatísticas de usuários e mensagens</li>
+		<li>Proteção de rotas com middleware</li>
+		<li>Segurança aprimorada com CSRF tokens e validação rigorosa de dados</li>
             </ul>
-        </nav>
-    </header>
+            <p>Este projeto é uma excelente prática de segurança em PHP, manejo de sessões, CRUDs, SQL e autenticação de usuários.</p>
+            <a href="https://github.com/mihguelsilva/php-mvc-login-seguro" target="_blank">Veja o código no GitHub</a>
+	</section>
 
-    <section id="projeto1">
-        <h2>Cadastro MVC com PHP</h2>
-        <p>Este é um projeto de cadastro de usuários implementado utilizando PHP e a arquitetura MVC. O sistema permite criar, listar, editar e excluir cadastros de usuários, com comunicação com o banco de dados MariaDB via PDO.</p>
-        <a href="https://github.com/mihguelsilva/cadastro-mvc-php" target="_blank">Veja o código no GitHub</a>
-    </section>
+	<section id="projeto3">
+	    <h2>🛠️ Reestruturação de Topologia de Rede com Autenticação PPPoE e VPN L2TP/IPSec</h2>
 
-    <section id="projeto2">
-        <h2>PHP MVC - Sistema de Login Seguro com Painel Administrativo</h2>
-        <p>Este projeto implementa um sistema de login seguro utilizando PHP com a arquitetura MVC. Ele oferece um painel administrativo protegido, onde é possível gerenciar usuários e visualizar mensagens recebidas via formulário de contato. A autenticação é realizada de forma segura com hash de senhas e controle de sessões. Além disso, o sistema inclui proteção contra CSRF, validação de e-mail, e outros mecanismos de segurança avançados.</p>
-        <p>O painel inclui funcionalidades como:</p>
-        <ul>
-            <li>Login seguro com hash de senha</li>
-            <li>Gestão de usuários cadastrados</li>
-            <li>Visualização e gerenciamento das mensagens recebidas via formulário de contato</li>
-            <li>Dashboard com estatísticas de usuários e mensagens</li>
-            <li>Proteção de rotas com middleware</li>
-            <li>Segurança aprimorada com CSRF tokens e validação rigorosa de dados</li>
-        </ul>
-        <p>Este projeto é uma excelente prática de segurança em PHP, manejo de sessões, CRUDs, SQL e autenticação de usuários.</p>
-        <a href="https://github.com/mihguelsilva/php-mvc-login-seguro" target="_blank">Veja o código no GitHub</a>
-    </section>
+	    <h3>📍 Contexto</h3>
+	    <p>
+		Ambiente corporativo com múltiplos servidores interligados, utilizando conexão de internet por roteador wireless (Huawei) e infraestrutura de rede baseada em RouterBOARD (RB).
+	    </p>
 
-    <footer>
-        <p>© 2025 Miguel Araujo - Todos os direitos reservados.</p>
-    </footer>
-</body>
+	    <h3>⚠️ Desafio</h3>
+	    <ul>
+		<li>Topologia incorreta, com roteador wireless gerenciando a autenticação.</li>
+		<li>Falta de segmentação clara entre funções de roteamento, autenticação e comunicação entre servidores.</li>
+		<li>Ausência de VPN para acesso seguro entre unidades ou servidores remotos.</li>
+	    </ul>
+
+	    <h3>🔧 Solução Implementada</h3>
+	    <ol>
+		<li><strong>Análise da arquitetura</strong> e identificação do erro de topologia.</li>
+		<li><strong>Redirecionamento do ponto de autenticação PPPoE</strong>: passou do roteador wireless para a RB.</li>
+		<li><strong>Configuração da VPN L2TP/IPSec</strong> na RB para conexão segura entre servidores.</li>
+		<li><strong>Modificação do roteador Huawei para modo Bridge</strong>, garantindo que os IPs públicos fossem entregues diretamente pela RB, com suas interfaces agrupadas em Bridge.</li>
+		<li>Testes de estabilidade, segurança e conectividade entre pontos.</li>
+	    </ol>
+
+	    <h3>✅ Resultado</h3>
+	    <ul>
+		<li>Arquitetura otimizada com funções bem definidas.</li>
+		<li>Conexão autenticada corretamente e com maior estabilidade.</li>
+		<li>Comunicação segura entre servidores via VPN.</li>
+		<li>Eliminação de NAT duplo e conflitos de roteamento.</li>
+		<li>Cliente extremamente satisfeito com a clareza, eficiência e profissionalismo da entrega.</li>
+	    </ul>
+	</section>
+
+	<footer>
+            <p>© 2025 Miguel Araujo - Todos os direitos reservados.</p>
+	</footer>
+    </body>
 </html>

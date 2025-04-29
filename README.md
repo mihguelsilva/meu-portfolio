@@ -58,6 +58,31 @@ A autenticação é feita com **hash seguro de senha**, controle de **sessões**
 - Estrutura MVC personalizada
 - PHPMailer para envio de emails
 
+### 🛠️ Reestruturação de Topologia de Rede com Autenticação PPPoE e VPN L2TP/IPSec
+
+#### 📍 Contexto
+Ambiente corporativo com múltiplos servidores interligados, utilizando conexão de internet por roteador wireless (Huawei) e infraestrutura de rede baseada em RouterBOARD (RB).
+
+#### ⚠️ Desafio
+A conexão estava instável e mal configurada:  
+- Topologia incorreta, com roteador wireless gerenciando a autenticação.  
+- Falta de segmentação clara entre funções de roteamento, autenticação e comunicação entre servidores.  
+- Ausência de VPN para acesso seguro entre unidades ou servidores remotos.
+
+#### 🔧 Solução Implementada
+1. **Análise da arquitetura** e identificação do erro de topologia.
+2. **Redirecionamento do ponto de autenticação PPPoE**: passou do roteador wireless para a RB.
+3. **Configuração da VPN L2TP/IPSec** na RB para conexão segura entre servidores.
+4. **Modificação do roteador Huawei para modo Bridge**, garantindo que os IPs públicos fossem entregues diretamente pela RB, com suas interfaces agrupadas em Bridge.
+5. Testes de estabilidade, segurança e conectividade entre pontos.
+
+#### ✅ Resultado
+- Arquitetura otimizada com funções bem definidas.  
+- Conexão autenticada corretamente e com maior estabilidade.  
+- Comunicação segura entre servidores via VPN.  
+- Eliminação de NAT duplo e conflitos de roteamento.  
+- Cliente extremamente satisfeito com a clareza, eficiência e profissionalismo da entrega.
+
 ## 📚 Em andamento
 
 Estou aprofundando meus conhecimentos em:
