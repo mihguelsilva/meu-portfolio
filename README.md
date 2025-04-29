@@ -1,4 +1,4 @@
-# 💼 Portfólio de Miguel da Silva Santos Tavares de Araujo
+# 💼 Portfólio de Mihguel da Silva Santos Tavares de Araujo
 
 Bem-vindo ao meu portfólio! Sou um desenvolvedor apaixonado por tecnologia, com foco em desenvolvimento web utilizando PHP, MySQL/MariaDB e arquitetura MVC. Este portfólio apresenta um pouco sobre minha trajetória, minhas habilidades e projetos que desenvolvi com dedicação e propósito.
 
